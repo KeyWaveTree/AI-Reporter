@@ -27,5 +27,5 @@ if not os.path.exists('../models'):
     os.mkdir('../models')
 
 tensorboard=tf.keras.callbacks.TensorBoard(log_dir='../logs')
-model.fit(x, y, epochs=100, callback='../logs')
+model.fit(x, y, epochs=100, callbacks=[tensorboard])
 model.save('../models/')

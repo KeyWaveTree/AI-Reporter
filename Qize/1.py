@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import ssl
 
-context=ssl._create_unverified_context()
+context=ssl.create_default_context()
 
 headers={'User-Agent': 'Mozilla/5.0'}
 
@@ -19,10 +19,11 @@ respense=urlopen(request, context=context)
 html=respense.read()
 
 soup=BeautifulSoup(html, 'html.parser')
-results=soup.find_all('a', {'class', 'cluster_text_headline nclicks(cls_sci.clsart)'})
+#파싱을 해서 헤드라인 타이틀을 저장(~태그 안에, cluster_text_headline에서 nclicks(cls_sci.clsart)목록을 추출해라.
+headlines=soup.find_all('a', {'class', 'cluster_text_headline nclicks(cls_sci.clsart)'})
 titles=[]
 
-for result in results:
+for result in headlines:
     titles.append(result.text)
 
 if not os.path.exists('../data'):
