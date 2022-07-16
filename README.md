@@ -21,20 +21,28 @@ python 3.8 버전을 사용하여 프로젝트를 진행.
 ## 본론(body) 
 ### 가상환경 설정(Environment Setting)
 아나콘다 프롬프트를 사용하여 환경설정을 하였습니다. [Anaconda Download](https://www.anaconda.com/products/individual)
-<br/> 가상환경 생성 및 가상환경 동기화
+<br/> 
+python 3.8 버전을 사용했습니다. 
+>***가상환경 생성 및 가상환경 동기화***
 ```
-1. anaconda3를 다운로드 후 anaconda pormpt 실행
+1. anaconda3를 다운로드 후 anaconda prompt 실행
 2. conda create -n [프로젝트 이름] python=[python version]
 3. activate [프로젝트 이름]
 4. pip install -r requirements.txt
 ```
 
 <!--I using the Anaconda prompt set up the project environment-->
+<!--### 주요기능-->
 
 ### 데이터 수집 및 가공(Data collection and processing)
-수집(collection)
+#### 수집(collection)
+
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) 
+라이브러리를 사용하여 필요한 데이터인 기사 헤드라인만 크롤링 하였습니다.  
+<!--
 1. 웹 크롤링
 2. 데이터 저장 및 불러오기
+-->
 
 가공(processing)
 1. 토큰화
@@ -58,8 +66,6 @@ python 3.8 버전을 사용하여 프로젝트를 진행.
 ### 자연어 처리
 1. 단어 가방
 2. 코사인 유사도
-
-### 주요기능
 
 <br/>
 
