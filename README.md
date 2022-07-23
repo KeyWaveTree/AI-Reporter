@@ -76,7 +76,7 @@ data.to_csv("../data/titles.csv", encoding= 'utf-8')
 <br/>
 
 
-#### 가공(processing)
+#### 가공: 데이터 전처리(processing or preprocessing)
 - <b>토큰화</b>
 <br/>토큰화란 말뭉치(corpus)에서 토큰(token: 문장을 문법으로 더이상 나뉠 수 없는 구조)으로 바꾸는 작업을 말합니다. 
 
@@ -84,6 +84,7 @@ data.to_csv("../data/titles.csv", encoding= 'utf-8')
 - 인코딩과 원 핫 인코딩
 
 ### 데이터 학습
+<!--자연어 처리에서 임베딩, 가중치, 순환신경망, 소프트멕스, -->
 1. 임베딩 부터 모델까지
 2. 학습
 3. 시각화
