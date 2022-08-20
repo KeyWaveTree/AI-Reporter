@@ -2,7 +2,8 @@ from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 import ssl
 
-context=ssl._create_unverified_context()
+# https 보안을 인증하기 위한 ssl (비공식)인증서 생성
+context=ssl.create_default_context()
 
 headers={'User-Agent': 'Mozilla/5.0'}
 
