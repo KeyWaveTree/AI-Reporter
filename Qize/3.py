@@ -35,4 +35,4 @@ for i in range(len(titles)):
     sequence=tokenizer.texts_to_sequences(titles[i])[0]
     for j in range(1, len(sequence)):
         x.append(sequence[:j])
-        x.append(sequence[j])
+        y.append(sequence[j])
